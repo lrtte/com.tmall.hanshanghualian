@@ -1,0 +1,175 @@
+/* 顶部导航 */
+.nav{
+    width: 100%;
+    height: 30px;
+    background: #f2f2f2;
+}
+.nav ul li i{
+    color: #FF0036;
+}
+.nav ul{
+    height: 30px;
+    width: 402px;
+    float: left;
+}
+.nav ul li{
+    list-style: none;
+    color: #999999;
+    list-style: none;
+    float: left;
+    margin-left: 27px;
+    line-height: 30px;
+}
+.nav ul li a,.nav ol li a{
+    color: #999999;
+    font-size: 14px;
+}
+.nav ul li a:hover,.nav ol li a:hover{
+    text-decoration:underline;
+    color: #FF0036;
+}
+.nav ul li span{
+    color: #999999;
+    font-size: 14px;
+}
+.nav ol{
+    float: right;
+    width: 641px;
+
+}
+.nav ol li{
+    list-style: none;
+    color: #999999;
+    list-style: none;
+    float: left;
+    margin-left: 22px;
+    line-height: 30px;
+}
+.nav ol li span{
+    font-size: 10px;
+}
+.nav ol li i{
+    font-size: 14px;
+    color: #FF0036;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #c8baaa;
+    margin-top: 50px;
+}
+.hualianlogo img{
+    margin-left: 162px;
+    width: 1185px;
+    height: 130px;
+    width: 950px;
+}
+.hualianlogo{
+    background-color: #fef7fe;
+    height: 130px;
+}
+.all-shangpin{
+    float: left;
+    width: 140px;
+    /* background-color: rgb(253, 253, 253); */
+    height: 30px;
+    margin-left: 140px;
+}
+.all-shangpin:hover{
+background-color: #fff;
+}
+.all-shangpin a{
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-left: 28px;
+    color: #fff;
+}
+.all-shangpin a:hover{
+ color: #333;
+}
+.all-shangpin ul{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.center-nav{
+    width: 100%;
+    background-color:#810000 ;
+    height: 30px;
+}
+.center-nav ul li{
+  float: left;
+}
+.center-nav ul li a{
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    padding: 35px;
+  }
+  .center-nav ul li a:hover{
+     color: #333;
+  }
+  .center-nav ul li:hover{
+    background-color: #fff;
+  }
+.carousel{
+    width: 100%;
+    height: 1000px;
+}
+.carousel ul{
+    width: 3840px;
+} 
+.carousel ul li{
+    float: left;
+} 
+.carpon{
+    background-color: #f5ece2;
+}
+.cuopon-left,.cuopon-right{
+    float: left;   
+    margin-top: 150px; 
+}
+.cuopon-left{
+   margin-right: 40px;
+   margin-left: 105px;
+   margin-top: 226px;
+}
+.cuopon-right1 img:hover{
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transform: scale(0.95);
+}
+.cuopon-right2,.cuopon-right3{
+    margin-top: 20px;
+}
+.all-ruqun ul li{
+    float: left;
+    margin: 24px;
+}
+.all-ruqun ul{
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.all-ruqun{
+    margin-top: 20px;
+}
+.cuopon-right2 img:hover{
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transform: scale(0.95);
+}
+.cuopon-right3 img:hover{
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transform: scale(0.95);
+}
+.all-ruqun ul li{
+    float: left;
+    margin: 24px;
+}
+.cuopon{
+    width: 100%;
+    height: 1288px;
+}
