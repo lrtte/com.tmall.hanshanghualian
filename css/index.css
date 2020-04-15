@@ -45,8 +45,11 @@
     margin-left: 22px;
     line-height: 30px;
 }
-.nav ol li span{
+
+/* 旋转 */
+.nav ol li span.arrow{
     font-size: 10px;
+    transform: rotate(0deg);
 }
 .nav ol li i{
     font-size: 14px;
