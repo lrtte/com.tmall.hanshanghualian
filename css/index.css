@@ -313,7 +313,7 @@ background-color: #fff;
 
 .show5 .hide-nav1 dl dd i{
     background-position: -37px -11px;
-    position: absolute;
+    /* position: absolute; */
     width: 9px;
     height: 11px;
     /* line-height: 0;
@@ -323,92 +323,76 @@ background-color: #fff;
     right: -9px;
     background: url(../img/jinglingtu.png);
 }
-.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
-}.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
-}.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
-}.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
-}.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
-}.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
-}.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
-}.show5 .hide-nav1 dl dd i{
-    background-position: -37px -11px;
-    position: absolute;
-    width: 9px;
-    height: 11px;
-    /* line-height: 0;
-    font-size: 0;
-    overflow: hidden; */
-    top: -7px;
-    right: -9px;
-    background: url(../img/jinglingtu.png);
+.taobao-nav{
+    height: 90px;
+    width: 100%;
+}
+/* a .taobao-nav-img{
+    width: 100px;
+    height: 100px;
+} */
+.taobao-nav-a1 img{
+    width: 109px;
+    height: 45px;
+    float: left;
+}
+.taobao-nav-a1 {   
+    float: left;
+    margin-top: 23px;
+    margin-left: 58px;
+}
+.taobao-nav-a2 i{
+    font-size: 16px;
+    color: #f40;
+}
+.taobao-nav-a2 {
+    margin-top: 27px;
+    float: right;
+    margin-right: 59px;
+    color: #404040;
+}
+
+.temaijie {
+width: 100%;
+height: 598px;
+overflow: hidden;
+}
+.temaijie img{
+    width: 129%;
+    height: 598px;
+    margin-left: -287px;
+}
+
+.albbjt{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
+.albbjt a,i{
+  line-height: 40px;
+  font-size: 12px;
+  color: #666;
+  /* padding: 20px; */
+}
+.albbjt a:hover{
+    color: #f40;
+  }
+.albbjt a{
+    padding: 10px;
+}
+.about p a{
+    color: #666;
+    margin-left: 10px;
+}
+.about p span{
+    color: rgb(145, 142, 142);
+    margin-left: 10px;
+}
+.about p a:hover{
+    color: #f40;
+}
+.bottom-albb{
+    margin-left: 100px;
 }
