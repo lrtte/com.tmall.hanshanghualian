@@ -8,8 +8,11 @@
             $(this).find('span').toggleClass('arrow')
             $(this).toggleClass('awm')
         })
+        $('video')[0].play()
     })
   
+
+    
   // 点击文字和小箭头的空白区域
         // 1. 给title区域添加点击事件
         // $('.title').on('click',function(){
