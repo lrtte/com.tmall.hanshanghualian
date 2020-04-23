@@ -25,10 +25,10 @@
                     <span>喵,欢迎来到天猫</span>
                 </li>
                 <li>
-                    <a href="">请登录</a>
+                    <a href="my-taobao.html">请登录</a>
                 </li>
                 <li>
-                    <a href="">免费注册</a>
+                    <a href="free-registration.html">免费注册</a>
                 </li>
             </ul>
             <ol>
@@ -37,8 +37,26 @@
                     <span class="iconfont">&#xe673;</span>
                 </li>
                 <li>
-                    <i class="iconfont">&#58890;</i>
-                    <a href="">购物车</a>
+                    <i class="iconfont" >&#58890;</i>
+                    <a id="link" href="javascript:;">购物车</a>
+                    <div id="login" class="login">
+                        <div id="title" class="login-title">登录会员
+                          <span><a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a></span>
+                        </div>
+                        <div class="login-input-content">
+                          <div class="login-input">
+                            <label>用户名：</label>
+                            <input type="text" placeholder="请输入用户名" name="username" id="username" class="list-input">
+                          </div>
+                          <div class="login-input">
+                            <label>登录密码：</label>
+                            <input type="password" placeholder="请输入登录密码" name="password" id="password" class="list-input">
+                          </div>
+                        </div>
+                        <div id="loginBtn" class="login-button"><a href="javascript:void(0);" id="login-button-submit">登录会员</a></div>
+                      </div>
+                      <!-- 遮盖层 -->
+                      <div id="bg" class="login-bg"></div>
                 </li>
                 <li class="title2">
                     <a href="">收藏夹</a>
@@ -57,7 +75,7 @@
                     <span class="iconfont">&#xe673;</span>
                 </li>
                 <li class="title5">
-                    <i class="iconfont">&#58918;</i>
+                    <i class="iconfont">&#xe627;</i>
                     <a href="">网站导航</a>
                     <span class="iconfont">&#xe673;</span>
                 </li>
@@ -196,19 +214,18 @@
     </div>
 
     <!-- 天猫栏 -->
-    <!-- <div class="tianmao">
+    <div class="tianmao">
         <div class="container">
-
             <div class="tianmao-logo">
                 <img src="./img/tmalllolg.PNG" alt="">
             </div>
-            <div class="tianmao-qijiandian">
-                <div id="qijiandain">
+            <div id="tianmao-qijiandian">
+                <div class="qijiandian">
                     <h2>汉尚华莲旗舰店</h2>
                     <span>品牌直销</span>
-                    <i></i>
+                    <i class="iconfont"></i>
                 </div>
-                <div>
+                <div class="wuliu">
                     <p>描述服务物流</p>
                     <p>
                         <b>4.9</b>
@@ -218,21 +235,35 @@
                         <b>4.9</b>
                         <i class="iconfont">&#60191;</i>
                     </p>
-                    <span></span>
+                    <span class="iconfont">&#58995;</span>
                 </div>
             </div>
-            <div class="tianmao-phone"></div>
-            <div id="search"></div>
+            <div class="tianmao-phone">
+                <p>手机逛</p>
+                <span class="iconfont">&#xe626;</span>
+                <i class="iconfont">&#58995;</i>
+            </div>
+            <div id="search">
+                <input type="text" value="请输入关键字">
+                <span>搜天猫</span>
+            </div>
+            <div class="local"> 搜本店</div>
         </div>
         <div>
 
         </div>
-    </div> -->
+    </div>
     </div>
     <div class="line"></div>
     <div class="hualianlogo">
         <div class="container">
             <img src="./img/hualianlogo.jpg" alt="">
+        </div>
+        <div class="service">
+
+        </div>
+        <div id="come-back">
+            
         </div>
     </div>
     <div class="center-nav">
@@ -397,11 +428,11 @@
 
                     </dl>
                 </div>
-                <div class="list-1"></div>
+                <!-- <div class="list-1"></div>
                 <div class="list-2"></div>
                 <div class="list-3"></div>
                 <div class="list-4"></div>
-                <div class="list-5"></div>
+                <div class="list-5"></div> -->
             </div>
             <ul>
                 <li><a href="">首页</a></li>
