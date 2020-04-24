@@ -153,7 +153,30 @@ $(function () {
         $(document).scrollTop(0)
      })
 
+    // 登录框tab栏------------------------------------------->
+       // 1.给li添加点击事件
+       
+       $('.tab_list>ul>li').click(function () {
+        // 1.1 让所有的item隐藏
+        // $('.item').eq(index).show();
+        $('.item').hide();
+        $(this).addClass('current').siblings('li').removeClass('current')
+        // $(this).addClass('active').siblings('li').removeClass('active');
+        // 1.2 让点击的这个li的索引对应的那个item显示
+        let index = $(this).index();
+        // console.log(index);
+        $('.item').eq(index).show();
+      })
+      $('.login-tab-ewm>a').click(function(){
+        $('.login-tab-Tv').show();
+        $('.login-tab').hide()
 
+       })
+       $('.tv>a').click(function(){
+           $('.login-tab-Tv').hide();
+           $('.login-tab').show()
+       })
+      
 })
 
 
