@@ -114,9 +114,7 @@
     height: 30px;
     margin-left: 140px;
 }
-/* .all-shangpin:hover{
-background-color: #fff;
-} */
+
 .all-shangpin a{
     color: #333;
     font-size: 14px;
@@ -124,7 +122,7 @@ background-color: #fff;
     line-height: 30px;
     padding-left: 28px;
     color: #fff;
-    padding: 7px 25px 493px;
+    padding: 7px 25px 7px;
 }
 
 .all-shangpin a:hover{
@@ -137,56 +135,7 @@ background-color: #fff;
     height: 30px;
     line-height: 30px;
 }
-.list-1{
-    position: absolute;
-    top: 34px;
-    left: 559px;
-    width: 223px;
-    height: 151px;
-    /* background-color: chartreuse; */
-    /* z-index: 2; */
-}
-.list-2{
-    position: absolute;
-    top: 121px;
-    left: 559px;
-    width: 223px;
-    height: 491px;
-    /* background-color: chartreuse; */
-    /* z-index: 1; */
-}
-.list-2{
-    position: absolute;
-    top: 121px;
-    left: 559px;
-    width: 223px;
-    height: 300px;
-    /* background-color: chartreuse; */
-}
-.list-3{
-    position: absolute;
-    top: 461px;
-    left: 559px;
-    width: 223px;
-    height: 371px;
-    /* background-color: chartreuse; */
-}
-.list-4{
-    position: absolute;
-    top: 500px;
-    left: 559px;
-    width: 223px;
-    height: 112px;
-    /* background-color: chartreuse; */
-}
-.list-5{
-    position: absolute;
-    top: 539px;
-    left: 559px;
-    width: 223px;
-    height: 112px;
-    /* background-color: chartreuse; */
-}
+
 .local-all-shangpin{
     position: absolute;
     top: 32px;
@@ -369,7 +318,7 @@ background-color: #fff;
     font-size: 14px;
     color: #fff;
     line-height: 30px;
-    padding: 35px;
+    padding: 7px 35px;
   }
   .center-nav ul li a:hover{
      color: #333;
@@ -1608,3 +1557,412 @@ font-size: 13px;
    margin-left: 10px;
 }
 
+/* ---------------------------- */
+/* 本店所有宝贝 */
+.all-things ul {
+    width: 990px;
+    margin: 200px auto;
+    /* padding: 20px; */
+    border: 1px solid #D1CCC7;
+    color: #303133;
+    font-size: 13px;
+    margin-top: -1px;
+    margin-left: 475px;
+  }
+
+ .all-things ul li {
+    border-bottom: 1px solid #ebeef5;
+    list-style: none;
+  }
+
+ .all-things ul li:first-child {
+    border-top: 1px solid #ebeef5;
+    list-style: none;
+  }
+
+ .all-things .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 0; */
+    width: 990px;
+    /* border-bottom: 1px solid #D1CCC7; */
+  }
+
+ .all-things .content {
+    display: none;
+    padding-bottom: 30px;
+  }
+
+ .all-things ul li:first-child .content {
+    display: block;
+  }
+
+ .all-things .header img {
+    transform: rotate(-90deg);
+    transition: all 0.2s;
+  }
+  
+ .all-things .header img.arrow {
+    transform: rotate(0deg);
+  }
+  .classify{
+      width: 990px;
+      height: 33px;
+      background: #f9f9f9;
+      margin-left: 475px;
+      border: 1px solid #E6E2E1;
+      /* display: none; */
+  }
+  .classify-all{
+      width: 180px;
+      height: 20px;
+      /* background-color: #7ac23c; */
+      float: left;
+      border: 1px solid #E6E2E1;
+      border-radius: 12px;
+      margin-left: 10px;
+      margin-top: 6px;
+  }
+  .classify span,.classify i{
+      float: left;
+  }
+  .classify span{
+    font-weight: 700;
+    margin-left:20px;
+    margin-top: 10px;
+}
+.classify i{
+    font-size: 10px;
+    margin-top: -4px;
+    margin-left: 0px;
+}
+  .classify-all input,.classify-all span{
+    float: left;
+  }
+  .classify-all input{
+    margin-left: 11px;
+    margin-top: 4px;
+    border: none;
+  }
+  #yes{
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: url(../img/jinglingtu2.png);
+    background-position: -131px -66px;
+    background-size: 162px;
+    margin-left: 695px;
+    margin-top: -7px;
+  }
+  .classify-all>span{
+    font-weight: 700;
+    margin-left: 1px;
+    margin-top: 2px;
+  }
+
+  /*  */
+  .classify-small{
+    width: 990px;
+    height: 33px;
+    background: #f9f9f9;
+    margin-left: 475px;
+    border: 1px solid #E6E2E1;
+    display: none;
+}
+.classify-all-less{
+    width: 180px;
+    height: 20px;
+    /* background-color: #7ac23c; */
+    float: left;
+    border: 1px solid #E6E2E1;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.classify-small span,.classify-small i{
+    float: left;
+}
+.classify-small span{
+  font-weight: 700;
+  margin-left:20px;
+  margin-top: 10px;
+}
+.classify-small i{
+  font-size: 10px;
+  margin-top: -4px;
+  margin-left: 0px;
+}
+.classify-all-less input,.classify-all-less span{
+  float: left;
+}
+.classify-all-less input{
+  margin-left: 11px;
+  margin-top: 4px;
+  border: none;
+}
+#no{
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: url(../img/jinglingtu2.png);
+    background-position: -131px -92px;
+    background-size: 162px;
+    margin-left: 695px;
+    margin-top: -7px;
+}
+.classify-all-less>span{
+  font-weight: 700;
+  margin-left: 1px;
+  margin-top: 2px;
+}
+.content-left{
+   
+    width: 99px;
+    height: 30px;
+    background-color: #F7F5F5;
+    float: left;
+}
+.content-right{
+    width: 668px;
+    height: 23px;
+    float: left;
+} 
+.header-left{
+    width: 99px;
+    height: 69px;
+    background-color: #F7F5F5;
+    float: left;
+}
+.header-right{
+    width: 889px;
+    height: 62px;
+    float: left;
+}
+.header-right p span{
+    margin: 15px 48px;
+}
+.header-left-even{
+    width: 99px;
+    height: 30px;
+    background-color: #F7F5F5;
+    float: left;
+}
+.header-right-even{
+    width: 889px;
+    height: 30px;
+    float: left;
+}
+.content-left-size{
+    width: 99px;
+    height: 23px;
+    background-color: #F7F5F5;
+    float: left;
+}
+.content-right-size{
+    width: 668px;
+    height: 23px;
+    float: left;
+} 
+.header-left-size{
+    width: 99px;
+    height: 30px;
+    background-color: #F7F5F5;
+    float: left;
+}
+.header-right-size{
+    width: 846px;
+    height: 31px;
+    float: left;
+}
+
+.header-right>p>b{
+    font-weight: 400;
+    color: #806F66;
+    margin-left: 37px;
+}
+.header-right>p>span>a{
+    color: #806F66;
+    line-height: 20px;
+}
+.header-right>p{
+    margin-top: 12px;
+}
+.header-right>p>span>a:hover{
+    color: rgb(182, 31, 4);
+    line-height: 8px;
+}
+/* .header{
+    border: 1px solid #D1CCC7;
+} */
+.content-right>p>span{
+    margin: 15px 48px;
+} 
+.content-right>p>span>a{
+    color: #806F66;
+    line-height: 46px;
+}
+.content-right>p>span>a:hover{
+    color: rgb(182, 31, 4);
+    line-height: 8px;
+}
+.header-right-size>p{
+    margin-top: 12px;
+}
+.header-right-size>p>span>a{
+    color: #806F66;
+    line-height: 20px;
+}
+.header-right-size>p>span>a:hover{
+    color: rgb(182, 31, 4);
+}
+.header-right-even>p{
+    margin-top: 12px;
+    margin-left: 22px;
+}
+.header-right-even>p>span>a{
+    color: #806F66;
+    line-height: 20px;
+}
+.header-right-even>p>span>a:hover{
+    color: rgb(182, 31, 4);
+}
+.header-right-even>p>span{
+    margin: 6px 25px
+}
+
+.header-right-even>p>b{
+    font-weight: 400;
+    color: #806F66;
+    margin-left: 4px;
+}
+.header-left span{
+    color: #B0A59F;
+}
+.header-left i{
+    color: #B0A59F;
+    margin-left: 8px;
+}
+.header-left-size span{
+    color: #B0A59F;
+    margin-left: 10px;
+}
+.header-left-even span{
+    color: #B0A59F;
+    margin-left: 10px;
+}
+/* .sort>.sort-list:nth-child(1){
+    float: left;
+    width: 70px;
+    height: 24px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+} */
+.sort .sort-list:nth-child(2){
+    width: 25px;
+    height: 13px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 7px 20px 5px 6px;
+    background-color: #fff;
+    color: #806f66;
+   
+}
+.sort .sort-list:nth-child(3){
+    width: 25px;
+    height: 13px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 7px 20px 5px 6px;
+    background-color: #fff;
+    color: #806f66;
+}
+.sort .sort-list:nth-child(4){
+    width: 25px;
+    height: 13px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 7px 20px 5px 6px;
+    background-color: #fff;
+    color: #806f66;
+}
+.sort .sort-list:nth-child(5){
+    width: 25px;
+    height: 13px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 7px 20px 5px 6px;
+    background-color: #fff;
+    color: #806f66;
+}
+.sort .sort-list:nth-child(6){
+    width: 25px;
+    height: 13px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 6px 15px;
+    background-color: #fff;
+    color: #806f66;
+ 
+}
+.sort .sort-list{
+    position: relative;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 6px 15px;
+    background-color: #f1edec;
+    color: #B10000;
+}
+.sort .sort-list>i{
+    position: absolute;
+    top: -6px;
+    left: 31px;
+    width: 7px;
+    height: 10px;
+   
+}
+.sort .sort-list>span{
+    position: absolute;
+    top: 3px;
+    left: 33px;
+    width: 7px;
+    height: 10px;
+    font-size: 14px;
+}
+.sort .sort-list>s{
+    position: absolute;
+    top: 11px;
+    left: 34px;
+    width: 7px;
+    height: 10px;
+    font-size: 8px;
+}
+.sort{
+    position: relative;
+    height: 500px;
+    margin-top: -177px;
+    margin-left: 348px;
+}
+.more-slector{
+    width: 100%;
+    background: #EFEBEA;
+    height: 4px;
+    border-top: 1px solid  #D1CCC7;
+}
+.sort input{
+    width: 25px;
+    height: 13px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 7px 20px 5px 6px;
+    background-color: #fff;
+    color: #806f66;
+    float: left;
+}
+.sort a{
+   width: 10px;
+   height: 24px;
+    float: left;
+    border: 1px solid #ccc;
+    background: #faf9f9;
+}

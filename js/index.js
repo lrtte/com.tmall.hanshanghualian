@@ -83,51 +83,29 @@ $(function () {
         $('.show5').toggle()
     })
     //本地所有商品-------------------------------------->
-    $('.all-shangpin').hover(function () {
-        $('.local-all-shangpin').toggle()
-    })
-    $('#baby-list').hover(function () {
-        $('.baby-list').toggle()
-
-    })
-    $('#new-series').hover(function () {
-        $('.new-series').toggle()
-    })
-    $('#trimmings').hover(function () {
-        $('.trimmings').toggle()
-    })
-    $('#acket').hover(function () {
-        $('.acket').toggle()
-    })
-    $('#trousers').hover(function () {
-        $('.trousers').toggle()
-    })
-    $('.all-list').hover(function () {
-        $('.baby-list').toggle()
-    })
-
-
-
-    // $('.list-1').hover(function () {
+    // $('.all-shangpin').hover(function () {
+    //     $('.local-all-shangpin').toggle()
+    // })
+    // $('#baby-list').hover(function () {
     //     $('.baby-list').toggle()
-    //     // $('.baby-list').css('zIndex','3')
-    //     // $(this).css('zIndex','0')
-    //     // $('.list-2').css('zIndex','1')
+
     // })
-    // $('.list-2').hover(function () {
+    // $('#new-series').hover(function () {
     //     $('.new-series').toggle()
-    //     // $('.list-1').css('zIndex','1')
-    //     // $(this).css('zIndex','2')
     // })
-    // $('.list-3').hover(function () {
+    // $('#trimmings').hover(function () {
     //     $('.trimmings').toggle()
     // })
-    // $('.list-4').hover(function () {
+    // $('#acket').hover(function () {
     //     $('.acket').toggle()
     // })
-    // $('.list-5').hover(function () {
+    // $('#trousers').hover(function () {
     //     $('.trousers').toggle()
     // })
+    // $('.all-list').hover(function () {
+    //     $('.baby-list').toggle()
+    // })
+
 
     //-购物车--------------------------------------------------------------->
     // 功能1: 点击  点击弹出登录框按钮 弹出登录框
@@ -176,7 +154,20 @@ $(function () {
            $('.login-tab-Tv').hide();
            $('.login-tab').show()
        })
-      
+       $('#yes').click(function(){
+           $('.classify').hide()
+           $('.classify-small').show()
+       })
+       $('#no').click(function(){
+        $('.classify-small').hide()
+        $('.classify').show()
+    })
+    //折叠面板
+    $('.all-things .header').on('click',function(){
+        $(this).next().stop().toggle()
+        $(this).find('img').toggleClass('arrow')
+    })
+  
 })
 
 
