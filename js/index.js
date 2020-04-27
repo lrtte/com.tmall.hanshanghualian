@@ -46,17 +46,18 @@ $(function () {
         //点击一次  +1
         index++;
         //给轮播图做限定
-        if (index > $('.carousel li').lenght - 1) {
+        if (index > $('.carousel li').length - 1) {
             index = 0
         }
         // console.log('11')
         $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
+        // console.log( $('.carousel li').length)
     })
     //点击做箭头 往右走一张
     $('.arrow-left').on('click', function () {
         index--;
         if (index < 0) {
-            index = $('.carousel li').lenght - 1;
+            index = $('.carousel li').length - 1;
         }
         $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
     })
@@ -167,7 +168,86 @@ $(function () {
         $(this).next().stop().toggle()
         $(this).find('img').toggleClass('arrow')
     })
-  
+    // 点击+号显示  点击-号隐藏  
+   $('#no').on('click',function(){
+       $('.all-things').show()
+   })
+   $('#yes').on('click',function(){
+    $('.all-things').hide()
+    })
+    // 换肤------------------------------------------->
+    $('#han_chinese_clothing-list>li').click(function(){
+        //获取到每个li的src
+        // $(this).addClass('shoot-border')
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list2>li').click(function(){
+        //获取到每个li的src
+        // $(this).addClass('shoot-border')
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list2').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list3>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list3').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list4>li').click(function(){
+          let imgSrc=$(this).find('img').attr('src');
+          $('.han_chinese_clothing-list4').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list5>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list5').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list6>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list6').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list7>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list7').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list8>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list8').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list10>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list10').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list11>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list11').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list12>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list12').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list13>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list13').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list14>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list14').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list15>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list15').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list16>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list16').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list17>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list17').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list18>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list18').css('backgroundImage',`url(${imgSrc})`)
+      })
 })
 
 

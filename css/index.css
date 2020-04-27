@@ -1413,7 +1413,6 @@ font-size: 13px;
     width: 204px;
     margin-top: 5px;
   }
-
   .tab_list li {
     height: 18px;
     line-height: 5px;
@@ -1432,7 +1431,7 @@ font-size: 13px;
     padding: 20px 0 0 20px;
   }
 
-  .item {
+  .item:nth-child(1){
     display: none;
   }
   .number>span,.password>span{
@@ -1440,10 +1439,7 @@ font-size: 13px;
       height: 40px;
       background-color: #cccccc;
       color: #fff;
-      padding: 17px 13px 11px 10px;
-      /* margin-left: 5px;
-      margin-top: 5px; */
-      
+      padding: 17px 13px 11px 10px;    
   }
   .number>span>i,.password>span>i{
     font-size: 24px;
@@ -1496,7 +1492,7 @@ font-size: 13px;
     margin: 5px;
   }
   .login-tab{
-      display: none;
+      display: block;
   }
   .login-tab-Tv{
     position: absolute;
@@ -1505,8 +1501,8 @@ font-size: 13px;
     width: 352px;
     height: 406px;
     background-color: #fff;
+    display: none;
 }
-
 .tv{
     width: 50px;
     height: 60px;
@@ -1566,7 +1562,7 @@ font-size: 13px;
     border: 1px solid #D1CCC7;
     color: #303133;
     font-size: 13px;
-    margin-top: -1px;
+    margin-top: -66px;
     margin-left: 475px;
   }
 
@@ -1613,6 +1609,7 @@ font-size: 13px;
       margin-left: 475px;
       border: 1px solid #E6E2E1;
       /* display: none; */
+      margin-left: 173px;
   }
   .classify-all{
       width: 180px;
@@ -1660,15 +1657,22 @@ font-size: 13px;
     margin-left: 1px;
     margin-top: 2px;
   }
+#classify{
+    width: 100%;
+    height: 50px;
+}
 
   /*  */
   .classify-small{
+    
     width: 990px;
     height: 33px;
     background: #f9f9f9;
-    margin-left: 475px;
+    /* margin-left: 475px; */
     border: 1px solid #E6E2E1;
     display: none;
+    margin-left: 173px;
+    margin-top: -51px;
 }
 .classify-all-less{
     width: 180px;
@@ -1903,7 +1907,7 @@ font-size: 13px;
     padding: 6px 15px;
     background-color: #fff;
     color: #806f66;
- 
+    margin-right: 10px;
 }
 .sort .sort-list{
     position: relative;
@@ -1919,7 +1923,7 @@ font-size: 13px;
     left: 31px;
     width: 7px;
     height: 10px;
-   
+  
 }
 .sort .sort-list>span{
     position: absolute;
@@ -1937,11 +1941,16 @@ font-size: 13px;
     height: 10px;
     font-size: 8px;
 }
+#sort-list{
+    margin-left: 176px;
+}
 .sort{
     position: relative;
-    height: 500px;
+    height: 40px;
     margin-top: -177px;
-    margin-left: 348px;
+    /* margin-left: 175px; */
+    width: 100%;
+    margin-top: -5px;
 }
 .more-slector{
     width: 100%;
@@ -1958,11 +1967,1599 @@ font-size: 13px;
     background-color: #fff;
     color: #806f66;
     float: left;
+    /* margin-left: 10px; */
 }
+
 .sort a{
    width: 10px;
    height: 24px;
     float: left;
     border: 1px solid #ccc;
     background: #faf9f9;
+    color: #cccccc;
+    text-align: center;
 }
+.toggle{
+    width: 100px;
+    height: 24px;
+    float: left;
+    margin-left: 240px;
+    margin-top: -5px;
+}
+.toggle i:nth-child(2){
+    background-color: #efefef;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+.toggle i:nth-child(3){
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+.checkbox{
+    width: 100px;
+    height: 24px;
+    float: left;
+    margin-top: 7px;
+}
+.sort .big-photo{
+    position: relative;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 6px 5px 5px 21px;
+    background-color: #f1edec;
+    color: #B10000;
+    width: 25px;
+    height: 13px;
+   
+}
+.sort .big-photo>i{
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    width: 7px;
+    height: 10px;
+}
+
+.sort .small-photo{
+    position: relative;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 6px 5px 5px 21px;
+    /* background-color: #f1edec; */
+    /* color: #B10000; */
+    width: 25px;
+    height: 13px;
+   
+}
+.all-things{
+    width: 100%;
+    /* height: 391px; */
+    height: 223px;
+}
+.sort .small-photo>i{
+    position: absolute;
+    top: -8px;
+    left: 4px;
+    width: 7px;
+    height: 10px;
+}
+.all-things-list{
+    margin-left: 481px;
+    width: 800px;
+    height: 500px;
+}
+.han_chinese_clothing{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+.han_chinese_clothing-list{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing>ul{
+   width: 100px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing>a{
+   width: 180px;
+   font-size: 12px;
+   color: #666666;
+   margin-top: 22px;
+   line-height: 15px;
+}
+.han_chinese_clothing>a:hover{
+  text-decoration: underline;
+ }
+ .han_chinese_clothing>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.han_chinese_clothing>h3{
+    color: #999999;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-top: -10px;
+ }
+ .han_chinese_clothing>h3>i{
+    color: #c49173;
+    font-weight: 700;
+    margin-right: 20px;
+ }
+ .han_chinese_clothing>h3>span{
+    color: #3388bb;
+    /* font-weight: 700; */
+ }
+
+ .han_chinese_clothing>h3>b{
+    color: #e3d6cc;
+    /* font-weight: 700; */
+    margin-right: 10px;
+ }
+.han_chinese_clothing-list{
+    background-image: url(../img/shoot1.jpg);
+}
+
+.han_chinese_clothing2{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list2{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing2>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing2>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing2>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing2>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing2>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing2>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing2>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+.han_chinese_clothing2>ul{
+   width: 100px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing2>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing2>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list2{
+    background-image: url(../img/shang1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing2>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* 换肤 */
+.han_chinese_clothing3{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list3{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing3>ul{
+    width: 124px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing3>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing3>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.han_chinese_clothing3>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing3>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing3>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing3>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing3>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing3>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list3{
+    background-image: url(../img/long1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing3>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* 换肤 */
+.han_chinese_clothing4{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+.han_chinese_clothing4>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing4>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing4>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing4>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing4>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing4>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing4>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+.han_chinese_clothing-list4{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing4>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing4>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing4>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list4{
+    background-image: url(../img/lian1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing4>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* 换肤 */
+.han_chinese_clothing5{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list5{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing5>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing5>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing5>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list5{
+    background-image: url(../img/shoot3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing5>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing5>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing5>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing5>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing5>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing5>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing5>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing5>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+  /* 换肤 */
+.han_chinese_clothing6{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list6{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing6>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing6>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing6>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list6{
+    background-image: url(../img/fu1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing6>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing6>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing6>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing6>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing6>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing6>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing6>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing6>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+  .container-list{
+    width: 1000px;
+  }
+    /* 换肤 */
+.han_chinese_clothing7{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list7{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing7>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing7>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing7>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list7{
+    background-image: url(../img/fu3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing7>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing7>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing7>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing7>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing7>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing7>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing7>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing7>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+
+  /* -------------- */
+      /* 换肤 */
+.han_chinese_clothing8{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list8{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing8>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing8>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing8>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list8{
+    background-image: url(../img/fu7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing8>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing8>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing8>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing8>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing8>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing8>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing8>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing8>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+      /* 换肤 */
+      .han_chinese_clothing9{
+        margin-top: 10px;
+        width: 180px;
+        height: 330px;
+        float: left;
+        margin-right: 20px;
+        /* margin-left: 177px; */
+    }
+    
+    .han_chinese_clothing-list9{
+        width: 180px;
+        height: 180px;
+    }
+    .han_chinese_clothing9>ul{
+        width: 170px;
+       height: 40px;
+       margin-top: 10px;
+    }
+    .han_chinese_clothing9>ul>li{
+        width: 34px;
+        height: 34px;
+        float: left;
+        border: 1px solid #ccc;
+        margin-left: 5px; 
+    }
+    .han_chinese_clothing9>ul>li>img{
+        width: 30px;
+        height: 30px;
+        /* margin-left: 5px; */
+        margin-left: 2px;
+        margin-top: 2px;
+    }
+    .shoot-border{
+        /* border: 2px solid  rgb(201, 4, 4); */
+        border: 2px solid rgb(201, 4, 4);
+    }
+    .han_chinese_clothing-list9{
+        background-image: url(../img/fu12.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .han_chinese_clothing9>p{
+        color: #c00;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .han_chinese_clothing9>a{
+        width: 180px;
+        font-size: 12px;
+        color: #666666;
+        margin-top: 22px;
+        line-height: 15px;
+     }
+     .han_chinese_clothing9>a:hover{
+       text-decoration: underline;
+      }
+      .han_chinese_clothing9>p{
+         color: #c00;
+         font-size: 14px;
+         font-weight: 700;
+         margin-bottom: 22px;
+     }
+     .han_chinese_clothing9>h3{
+         color: #999999;
+         font-weight: 200;
+         margin-top: 10px;
+         margin-top: -10px;
+      }
+      .han_chinese_clothing9>h3>i{
+         color: #c49173;
+         font-weight: 700;
+         margin-right: 20px;
+      }
+      .han_chinese_clothing9>h3>span{
+         color: #3388bb;
+         /* font-weight: 700; */
+      }
+     
+      .han_chinese_clothing9>h3>b{
+         color: #e3d6cc;
+         /* font-weight: 700; */
+         margin-right: 10px;
+      }
+    /* 换肤 */
+          .han_chinese_clothing10{
+            margin-top: 10px;
+            width: 180px;
+            height: 330px;
+            float: left;
+            margin-right: 20px;
+            /* margin-left: 177px; */
+        }
+        
+        .han_chinese_clothing-list10{
+            width: 180px;
+            height: 180px;
+        }
+        .han_chinese_clothing10>ul{
+            width: 170px;
+           height: 40px;
+           margin-top: 10px;
+        }
+        .han_chinese_clothing10>ul>li{
+            width: 34px;
+            height: 34px;
+            float: left;
+            border: 1px solid #ccc;
+            margin-left: 5px; 
+        }
+        .han_chinese_clothing10>ul>li>img{
+            width: 30px;
+            height: 30px;
+            /* margin-left: 5px; */
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        .shoot-border{
+            /* border: 2px solid  rgb(201, 4, 4); */
+            border: 2px solid rgb(201, 4, 4);
+        }
+        .han_chinese_clothing-list10{
+            background-image: url(../img/fu13.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .han_chinese_clothing10>p{
+            color: #c00;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .han_chinese_clothing10>a{
+            width: 180px;
+            font-size: 12px;
+            color: #666666;
+            margin-top: 22px;
+            line-height: 15px;
+         }
+         .han_chinese_clothing10>a:hover{
+           text-decoration: underline;
+          }
+          .han_chinese_clothing10>p{
+             color: #c00;
+             font-size: 14px;
+             font-weight: 700;
+             margin-bottom: 22px;
+         }
+         .han_chinese_clothing10>h3{
+             color: #999999;
+             font-weight: 200;
+             margin-top: 10px;
+             margin-top: -10px;
+          }
+          .han_chinese_clothing10>h3>i{
+             color: #c49173;
+             font-weight: 700;
+             margin-right: 20px;
+          }
+          .han_chinese_clothing10>h3>span{
+             color: #3388bb;
+             /* font-weight: 700; */
+          }
+         
+          .han_chinese_clothing10>h3>b{
+             color: #e3d6cc;
+             /* font-weight: 700; */
+             margin-right: 10px;
+          }
+
+           /* 换肤 */
+           .han_chinese_clothing11{
+            margin-top: 10px;
+            width: 180px;
+            height: 330px;
+            float: left;
+            margin-right: 20px;
+            /* margin-left: 177px; */
+        }
+        
+        .han_chinese_clothing-list11{
+            width: 180px;
+            height: 180px;
+        }
+        .han_chinese_clothing11>ul{
+            width: 170px;
+           height: 40px;
+           margin-top: 10px;
+        }
+        .han_chinese_clothing11>ul>li{
+            width: 34px;
+            height: 34px;
+            float: left;
+            border: 1px solid #ccc;
+            margin-left: 5px; 
+        }
+        .han_chinese_clothing11>ul>li>img{
+            width: 30px;
+            height: 30px;
+            /* margin-left: 5px; */
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        .shoot-border{
+            /* border: 2px solid  rgb(201, 4, 4); */
+            border: 2px solid rgb(201, 4, 4);
+        }
+        .han_chinese_clothing-list11{
+            background-image: url(../img/fu17.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .han_chinese_clothing11>p{
+            color: #c00;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .han_chinese_clothing11>a{
+            width: 180px;
+            font-size: 12px;
+            color: #666666;
+            margin-top: 22px;
+            line-height: 15px;
+         }
+         .han_chinese_clothing11>a:hover{
+           text-decoration: underline;
+          }
+          .han_chinese_clothing11>p{
+             color: #c00;
+             font-size: 14px;
+             font-weight: 700;
+             margin-bottom: 22px;
+         }
+         .han_chinese_clothing11>h3{
+             color: #999999;
+             font-weight: 200;
+             margin-top: 10px;
+             margin-top: -10px;
+          }
+          .han_chinese_clothing11>h3>i{
+             color: #c49173;
+             font-weight: 700;
+             margin-right: 20px;
+          }
+          .han_chinese_clothing11>h3>span{
+             color: #3388bb;
+             /* font-weight: 700; */
+          }
+         
+          .han_chinese_clothing11>h3>b{
+             color: #e3d6cc;
+             /* font-weight: 700; */
+             margin-right: 10px;
+          }
+            /* -------------- */
+      /* 换肤 */
+.han_chinese_clothing12{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list12{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing12>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing12>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing12>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list12{
+    background-image: url(../img/fu21.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing12>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing12>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing12>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing12>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing12>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing12>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing12>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing12>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+
+        /* 换肤 */
+.han_chinese_clothing13{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list13{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing13>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing13>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing13>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list13{
+    background-image: url(../img/fu22.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing13>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing13>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing13>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing13>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing13>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing13>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing13>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing13>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+          /* 换肤 */
+.han_chinese_clothing14{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list14{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing14>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing14>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing14>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list14{
+    background-image: url(../img/fu25.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing14>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing14>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing14>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing14>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing14>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing14>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing14>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing14>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+
+            /* 换肤 */
+.han_chinese_clothing15{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list15{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing15>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing15>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing15>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list15{
+    background-image: url(../img/fu30.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing15>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing15>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing15>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing15>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing15>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing15>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing15>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing15>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+
+  
+            /* 换肤 */
+.han_chinese_clothing16{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list16{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing16>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing16>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing16>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list16{
+    background-image: url(../img/fu34.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing16>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing16>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing16>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing16>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing16>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing16>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing16>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing16>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+              /* 换肤 */
+.han_chinese_clothing17{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list17{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing17>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing17>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing17>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list17{
+    background-image: url(../img/fu36.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing17>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing17>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing17>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing17>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing17>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing17>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing17>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing17>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }
+
+                /* 换肤 */
+.han_chinese_clothing18{
+    margin-top: 10px;
+    width: 180px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    /* margin-left: 177px; */
+}
+
+.han_chinese_clothing-list18{
+    width: 180px;
+    height: 180px;
+}
+.han_chinese_clothing18>ul{
+    width: 170px;
+   height: 40px;
+   margin-top: 10px;
+}
+.han_chinese_clothing18>ul>li{
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 5px; 
+}
+.han_chinese_clothing18>ul>li>img{
+    width: 30px;
+    height: 30px;
+    /* margin-left: 5px; */
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.shoot-border{
+    /* border: 2px solid  rgb(201, 4, 4); */
+    border: 2px solid rgb(201, 4, 4);
+}
+.han_chinese_clothing-list18{
+    background-image: url(../img/fu41.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.han_chinese_clothing18>p{
+    color: #c00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.han_chinese_clothing18>a{
+    width: 180px;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 22px;
+    line-height: 15px;
+ }
+ .han_chinese_clothing18>a:hover{
+   text-decoration: underline;
+  }
+  .han_chinese_clothing18>p{
+     color: #c00;
+     font-size: 14px;
+     font-weight: 700;
+     margin-bottom: 22px;
+ }
+ .han_chinese_clothing18>h3{
+     color: #999999;
+     font-weight: 200;
+     margin-top: 10px;
+     margin-top: -10px;
+  }
+  .han_chinese_clothing18>h3>i{
+     color: #c49173;
+     font-weight: 700;
+     margin-right: 20px;
+  }
+  .han_chinese_clothing18>h3>span{
+     color: #3388bb;
+     /* font-weight: 700; */
+  }
+ 
+  .han_chinese_clothing18>h3>b{
+     color: #e3d6cc;
+     /* font-weight: 700; */
+     margin-right: 10px;
+  }

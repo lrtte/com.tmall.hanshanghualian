@@ -431,11 +431,6 @@
 
                     </dl>
                 </div>
-                <!-- <div class="list-1"></div>
-                <div class="list-2"></div>
-                <div class="list-3"></div>
-                <div class="list-4"></div>
-                <div class="list-5"></div> -->
             </div>
             <ul>
                 <li><a href="">首页</a></li>
@@ -448,26 +443,34 @@
             </ul>
         </div>
     </div>
-    <div class="classify">
+    <div id="classify">
         <div class="container">
-            <span>所有分类</span>
-            <i class="iconfont">&#xe507;</i>
-            <div class="classify-all">
-                <input type="text" placeholder="在当前结果中搜索">
-                <span class="iconfont">&#xe611;</span>
+            <div class="classify">
+                <div class="container">
+                    <span>所有分类</span>
+                    <i class="iconfont">&#xe507;</i>
+                    <div class="classify-all">
+                        <input type="text" placeholder="在当前结果中搜索">
+                        <span class="iconfont">&#xe611;</span>
+                    </div>
+                    <s id="yes"></s>
+                </div>
             </div>
-            <s id="yes"></s>
         </div>
     </div>
-    <div class="classify-small">
+    <div id="classify">
         <div class="container">
-            <span>所有分类</span>
-            <i class="iconfont">&#xe507;</i>
-            <div class="classify-all-less">
-                <input type="text" placeholder="在当前结果中搜索">
-                <span class="iconfont">&#xe611;</span>
+            <div class="classify-small">
+                <div class="container">
+                    <span>所有分类</span>
+                    <i class="iconfont">&#xe507;</i>
+                    <div class="classify-all-less">
+                        <input type="text" placeholder="在当前结果中搜索">
+                        <span class="iconfont">&#xe611;</span>
+                    </div>
+                    <s id="no"></s>
+                </div>
             </div>
-            <s id="no"></s>
         </div>
     </div>
     <div class="all-things">
@@ -498,15 +501,15 @@
                     </div>
                 </div>
                 <div class="content">
-                   <div class="content-left"></div>
-                   <div class="content-right">
-                    <p>
-                        <span><a href="">*齐胸襦裙</a></span>
-                        <span><a href="">*对襟襦裙</a></span>
-                        <span><a href="">亲子装</a></span>
-                        <span><a href="">*坦袖襦裙</a></span>
-                    </p>
-                   </div>
+                    <div class="content-left"></div>
+                    <div class="content-right">
+                        <p>
+                            <span><a href="">*齐胸襦裙</a></span>
+                            <span><a href="">*对襟襦裙</a></span>
+                            <span><a href="">亲子装</a></span>
+                            <span><a href="">*坦袖襦裙</a></span>
+                        </p>
+                    </div>
                 </div>
             </li>
             <li>
@@ -543,17 +546,16 @@
                             <b id="more">更多</b>
                             <img class="arrow" src="./img/select.png" alt="">
                         </p>
-                        
                     </div>
                 </div>
                 <div class="content">
-                   <div class="content-left"></div>
-                   <div class="content-right">
-                    <p>
-                        <span><a href="">34</a></span>
-                        <span><a href="">XXS</a></span>
-                    </p>
-                   </div>
+                    <div class="content-left"></div>
+                    <div class="content-right">
+                        <p>
+                            <span><a href="">34</a></span>
+                            <span><a href="">XXS</a></span>
+                        </p>
+                    </div>
                 </div>
             </li>
             <li>
@@ -567,20 +569,13 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="content">
-                   <div class="content-left"></div>
-                   <div class="content-right">
-                   </div>
-                </div> -->
             </li>
             <div class="more-slector"></div>
         </ul>
-     
     </div>
-    <!-- <div class="more-slector"></div> -->
     <div class="sort">
         <div class="container">
-            <div class="sort-list"> 综合销量</div>
+            <div class="sort-list" id="sort-list"> 综合销量</div>
             <div class="sort-list">
                 销量
                 <i class="iconfont">&#xe601;</i>
@@ -602,8 +597,312 @@
             <input type="text" value="￥">
             <a href="">-</a>
             <input type="text" value="￥">
+            <div class="checkbox">
+                <input type="checkbox">店铺VIP商品
+            </div>
+            <div class="big-photo">
+                大图
+                <i class="iconfont">&#xe652;</i>
+            </div>
+            <div class="small-photo">
+                小图
+                <i class="iconfont">&#xe608;</i>
+            </div>
+            <div class="toggle">
+                <span>1/3</span>
+                <i class="iconfont">&#xe504;</i>
+                <i class="iconfont">&#xe556;</i>
+            </div>
         </div>
     </div>
+    <div class="all-things-list">
+        <div class="container-list">
+            <div class="han_chinese_clothing">
+                <div class="han_chinese_clothing-list"></div>
+                <ul id="han_chinese_clothing-list">
+                    <li>
+                        <img src="./img/shoot1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/shoot2.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥128.00</p>
+                <a href="">汉尚华莲枫灵原创汉服女明制交领衫搭褶裙枫叶印花春夏季现货 </a>
+                <h3>总销量: <i>12563</i><b>|</b><span>评价:3868</span></h3>
+            </div>
+            <div class="han_chinese_clothing2">
+                <div class="han_chinese_clothing-list2"></div>
+                <ul id="han_chinese_clothing-list2">
+                    <li>
+                        <img src="./img/shang2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/shang3.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥199.00</p>
+                <a href="">汉尚华莲龙母店庆款原创汉服女齐胸襦裙外层8米大摆龙纹刺绣现货 </a>
+                <h3>总销量: <i>26546</i><b>|</b><span>评价:8025</span></h3>
+            </div>
+            <div class="han_chinese_clothing3">
+                <div class="han_chinese_clothing-list3"></div>
+                <ul id="han_chinese_clothing-list3">
+                    <li>
+                        <img src="./img/long2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/long2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/long2.png" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥888.00</p>
+                <a href="">汉尚华莲池羽汉服女配饰面纱面帘刺绣钉珠渐变系带中国风头饰百搭 </a>
+                <h3>总销量: <i>699</i><b>|</b><span>评价:0</span></h3>
+            </div>
+            <div class="han_chinese_clothing4">
+                <div class="han_chinese_clothing-list4"></div>
+                <ul id="han_chinese_clothing-list4">
+                    <li>
+                        <img src="./img/lian5.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/lian2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/lian3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/lian4.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥49.00</p>
+                <a href="">汉尚华莲鸾镜汉服配饰布鞋秋季新款民族风绣花鞋平底休闲女鞋日常 </a>
+                <h3>总销量: <i>8848</i><b>|</b><span>评价:2270</span></h3>
+            </div>
+            <div class="han_chinese_clothing5">
+                <div class="han_chinese_clothing-list5"></div>
+                <ul id="han_chinese_clothing-list5">
+                    <li>
+                        <img src="./img/shoot4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/shoot5.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/shoot3.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥128.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing6">
+                <div class="han_chinese_clothing-list6"></div>
+                <ul id="han_chinese_clothing-list6">
+                    <li>
+                        <img src="./img/fu2.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing7">
+                <div class="han_chinese_clothing-list7"></div>
+                <ul id="han_chinese_clothing-list7">
+                    <li>
+                        <img src="./img/fu4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu5.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu6.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing8">
+                <div class="han_chinese_clothing-list8"></div>
+                <ul id="han_chinese_clothing-list8">
+                    <li>
+                        <img src="./img/fu8.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu9.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu10.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu11.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing9">
+                <div class="han_chinese_clothing-list9"></div>
+                <ul id="han_chinese_clothing-list9">
+                    <li>
+                        <img src="./img/fu12.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing10">
+                <div class="han_chinese_clothing-list10"></div>
+                <ul id="han_chinese_clothing-list10">
+                    <li>
+                        <img src="./img/fu14.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu15.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu16.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing11">
+                <div class="han_chinese_clothing-list11"></div>
+                <ul id="han_chinese_clothing-list11">
+                    <li>
+                        <img src="./img/fu18.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/19.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing12">
+                <div class="han_chinese_clothing-list12"></div>
+                <ul id="han_chinese_clothing-list12">
+                    <li>
+                        <img src="./img/fu20.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing13">
+                <div class="han_chinese_clothing-list13"></div>
+                <ul id="han_chinese_clothing-list13">
+                    <li>
+                        <img src="./img/fu23.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu24.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu24.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing14">
+                <div class="han_chinese_clothing-list14"></div>
+                <ul id="han_chinese_clothing-list14">
+                    <li>
+                        <img src="./img/fu27.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu28.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu29.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu26.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing15">
+                <div class="han_chinese_clothing-list15"></div>
+                <ul id="han_chinese_clothing-list15">
+                    <li>
+                        <img src="./img/fu31.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu32.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu33.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing16">
+                <div class="han_chinese_clothing-list16"></div>
+                <ul id="han_chinese_clothing-list16">
+                    <li>
+                        <img src="./img/fu35.png" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing17">
+                <div class="han_chinese_clothing-list17"></div>
+                <ul id="han_chinese_clothing-list17">
+                    <li>
+                        <img src="./img/fu37.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu38.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu39.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu40.jpg" alt="">
+                    </li>
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+            <div class="han_chinese_clothing18">
+                <div class="han_chinese_clothing-list18"></div>
+                <ul id="han_chinese_clothing-list18">
+                    <li>
+                        <img src="./img/fu42.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/fu43.jpg" alt="">
+                    </li>
+                
+                </ul>
+                <p class="price">￥258.00</p>
+                <a href="">汉尚华莲玉素汉服女鞋原创复古搭配饰弓鞋千层底日常搭配绣花鞋 </a>
+                <h3>总销量: <i>8433</i><b>|</b><span>评价:1878</span></h3>
+            </div>
+        </div>
+    </div>
+   
 </body>
 
 </html>
