@@ -64,7 +64,7 @@ $(function () {
     //自动走
     setInterval(function () {
         $('.arrow-right').click();
-    }, 3000)
+    }, 5000)
     //---------------------------------------------------->
     // 鼠标移入到title上面对应的盒子显示出来
 
@@ -247,6 +247,174 @@ $(function () {
       $('#han_chinese_clothing-list18>li').click(function(){
         let imgSrc=$(this).find('img').attr('src');
         $('.han_chinese_clothing-list18').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list19>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list19').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list20>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list20').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list21>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list21').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list22>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list22').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list23>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list23').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list24>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list24').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list25>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list25').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list26>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list26').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list27>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list27').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list28>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list28').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list29>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list29').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list30>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list30').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list31>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list31').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list32>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list32').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list33>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list33').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list34>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list34').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list35>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list35').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list36>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list36').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list37>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list37').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list38>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list38').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list39>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list39').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list40>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list40').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list41>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list41').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list42>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list42').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list43>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list43').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list44>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list44').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list45>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list45').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list46>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list46').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list47>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list47').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list48>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list48').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list49>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list49').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list50>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list50').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list51>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list51').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list52>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list52').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list53>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list53').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list54>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list54').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list55>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list55').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list56>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list56').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list57>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list57').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list58>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list58').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list59>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list59').css('backgroundImage',`url(${imgSrc})`)
+      })
+      $('#han_chinese_clothing-list60>li').click(function(){
+        let imgSrc=$(this).find('img').attr('src');
+        $('.han_chinese_clothing-list60').css('backgroundImage',`url(${imgSrc})`)
       })
 })
 
