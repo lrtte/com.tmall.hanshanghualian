@@ -416,6 +416,9 @@ $(function () {
         let imgSrc=$(this).find('img').attr('src');
         $('.han_chinese_clothing-list60').css('backgroundImage',`url(${imgSrc})`)
       })
+
+      // 放大镜------------------------------>
+      $("#exzoom").exzoom();
 })
 
 
