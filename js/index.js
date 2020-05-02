@@ -419,6 +419,30 @@ $(function () {
 
       // 放大镜------------------------------>
       $("#exzoom").exzoom();
+
+      //  商品详情评价tab------------------------------------->
+      $('.buy-right>ul>li').click(function () {
+        $(this).addClass('attr').siblings('li').removeClass('attr')
+    //  console.log('11')
+      })
+
+      $('.shop-list5>ul>li').mouseover(function () {
+        $(this).addClass('buy-num').siblings('li').removeClass('buy-num')
+        let index=$(this).index();
+        $('#buy-tab').show()
+      })
+
+      // $('.tab_list>ul>li').click(function () {
+      //   // 1.1 让所有的item隐藏
+      //   // $('.item').eq(index).show();
+      //   $('.item').hide();
+      //   $(this).addClass('current').siblings('li').removeClass('current')
+      //   // $(this).addClass('active').siblings('li').removeClass('active');
+      //   // 1.2 让点击的这个li的索引对应的那个item显示
+      //   let index = $(this).index();
+      //   // console.log(index);
+      //   $('.item').eq(index).show();
+      // })
 })
 
 
