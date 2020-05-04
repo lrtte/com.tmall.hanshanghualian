@@ -3,7 +3,7 @@
   .exzoom * {
     box-sizing: border-box; }
   .exzoom .exzoom_img_box {
-    background: rgb(248, 191, 191);
+    background: rgb(255, 255, 255);
     position: relative; }
     .exzoom .exzoom_img_box .exzoom_main_img {
       display: block;
@@ -16,7 +16,7 @@
     top: 0;
     overflow: hidden;
     z-index: 999;
-    background-color: rgb(240, 170, 170);
+    background-color: rgb(248, 246, 246);
     border: 1px solid #ddd;
     display: none; }
     .exzoom .exzoom_preview .exzoom_preview_img {
@@ -55,7 +55,7 @@
       border: 1px solid #ddd;
       height: 60px;
       line-height: 60px;
-      background: rgb(230, 154, 154);
+      background: rgb(255, 255, 255);
       text-align: center;
       font-size: 18px;
       position: absolute;

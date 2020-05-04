@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./css/jquery.exzoom.css">
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.exzoom.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="nav">
+        <div class="container">
+            <ul>
+                <li>
+                    <i class="iconfont">&#59012;</i>
+                    <a href="">天猫首页</a>
+                </li>
+                <li>
+                    <span>喵,欢迎来到天猫</span>
+                </li>
+                <li>
+                    <a href="my-taobao.html">请登录</a>
+                </li>
+                <li>
+                    <a href="free-registration.html">免费注册</a>
+                </li>
+            </ul>
+            <ol>
+                <li class="title1">
+                    <a href="">我的淘宝</a>
+                    <span class="iconfont">&#xe673;</span>
+                </li>
+                <li>
+                    <i class="iconfont">&#58890;</i>
+                    <a id="link" href="javascript:;">购物车</a>
+                    <div id="login" class="login">
+                        <div id="title" class="login-title">登录会员
+                            <span><a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a></span>
+                        </div>
+                        <div class="login-input-content">
+                            <div class="login-input">
+                                <label>用户名：</label>
+                                <input type="text" placeholder="请输入用户名" name="username" id="username"
+                                    class="list-input">
+                            </div>
+                            <div class="login-input">
+                                <label>登录密码：</label>
+                                <input type="password" placeholder="请输入登录密码" name="password" id="password"
+                                    class="list-input">
+                            </div>
+                        </div>
+                        <div id="loginBtn" class="login-button"><a href="javascript:void(0);"
+                                id="login-button-submit">登录会员</a></div>
+                    </div>
+                    <!-- 遮盖层 -->
+                    <div id="bg" class="login-bg"></div>
+                </li>
+                <li class="title2">
+                    <a href="">收藏夹</a>
+                    <span class="iconfont">&#xe673;</span>
+                </li>
+                <li>|</li>
+                <li class="title3">
+                    <i class="iconfont">&#58906;</i>
+                    <a href="">手机版</a>
+                </li>
+                <li>
+                    <a href="">淘宝网</a>
+                </li>
+                <li class="title4">
+                    <a href="">商家支持</a>
+                    <span class="iconfont">&#xe673;</span>
+                </li>
+                <li class="title5">
+                    <i class="iconfont">&#xe627;</i>
+                    <a href="">网站导航</a>
+                    <span class="iconfont">&#xe673;</span>
+                </li>
+            </ol>
+            <div class="show1">
+                <p>已买到的宝贝</p>
+                <p>已卖出的宝贝</p>
+            </div>
+            <div class="show2">
+                <p>收藏的宝贝</p>
+                <p>收藏的店铺</p>
+            </div>
+            <div class="show3">
+                <i class="iconfont">&#xe502;</i>
+                <div class="go-tianmao"> <a href="">到天猫App</a>
+                    <p>新人享4.9元包邮好货</p>
+                </div>
+            </div>
+            <div class="show4">
+                <h4>商家:</h4>
+                <div>
+                    <dl>
+                        <dd>商家中心</dd>
+                        <dd>商家入驻</dd>
+                        <dd>商家品控</dd>
+                        <dd>天猫智控</dd>
+                    </dl>
+                    <dl>
+                        <dd>天猫规则</dd>
+                        <dd>运营服控</dd>
+                        <dd>商家工具</dd>
+                        <dd>喵言喵语</dd>
+                    </dl>
+
+                </div>
+                <div class="xuxian1"></div>
+                <h4>帮助:</h4>
+                <div>
+                    <dl>
+                        <dd>帮助中心</dd>
+                    </dl>
+                    <dl>
+                        <dd>问商友</dd>
+                    </dl>
+                </div>
+                <div class="xuxian1"></div>
+            </div>
+            <div class="show5">
+                <div class="hide-nav1">
+                    <h2>热点推荐 Hot</h2>
+                    <dl>
+                        <dd> <a href="">天猫超市</a></dd>
+                        <dd> <a href="">内衣新品</a>
+                            <i class="red"></i>
+                        </dd>
+                        <dd> <a href="">吃月会</a>
+                            <b class="green"></b>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">喵鲜生</a></dd>
+                        <dd> <a href="">试美妆</a></dd>
+                        <dd> <a href="">企业采购</a></dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">科技新品</a>
+                            <b class="green"></b>
+                        </dd>
+                        <dd> <a href="">运动新品</a></dd>
+                        <dd> <a href="">会员积分</a></dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">女装新品</a>
+                            <i class="red"></i>
+                        </dd>
+                        <dd> <a href="">时尚先生</a>
+                            <i class="red"></i>
+                        </dd>
+                        <dd> <a href="">天猫国际</a></dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">酷玩街</a></dd>
+                        <dd> <a href="">精明妈咪</a></dd>
+                        <dd> <a href="">品质频道</a></dd>
+                    </dl>
+                </div>
+                <div class="hide-nav2">
+                    <h2>行业市场 Market</h2>
+                    <dl>
+                        <dd> <a href="">美妆</a></dd>
+                        <dd> <a href="">内衣</a></dd>
+                        <dd> <a href="">家装</a></dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">电器</a></dd>
+                        <dd> <a href="">内衣</a>
+                            <i class="red"></i>
+                        </dd>
+                        <dd> <a href="">医药</a></dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">女装</a></dd>
+                        <dd> <a href="">箱包</a>
+                            <i class="red"></i>
+                        </dd>
+                        <dd> <a href="">食品</a></dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">男装</a>
+                            <i class="red"></i>
+                        </dd>
+                        <dd> <a href="">运动</a></dd>
+                        <dd> <a href="">配饰</a>
+                            <b class="green"></b>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">女鞋</a></dd>
+                        <dd> <a href="">母婴</a></dd>
+                        <dd> <a href="">汽车</a></dd>
+                    </dl>
+                </div>
+                <div class="hide-nav3">
+                    <h2>服务指南 Help</h2>
+                    <dl>
+                        <dd> <a href="">帮助中心</a></dd>
+                        <dd> <a href="">特色服务</a></dd>
+                    </dl>
+                    <dl>
+                        <dd> <a href="">品质保障</a></dd>
+                        <dd> <a href="">7天退换货</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 天猫栏 -->
+    <div class="tianmao">
+        <div class="container">
+            <div class="tianmao-logo">
+                <img src="./img/tmalllolg.PNG" alt="">
+            </div>
+            <div id="tianmao-qijiandian">
+                <div class="qijiandian">
+                    <h2>汉尚华莲旗舰店</h2>
+                    <span>品牌直销</span>
+                    <i class="iconfont"></i>
+                </div>
+                <div class="wuliu">
+                    <p>描述服务物流</p>
+                    <p>
+                        <b>4.9</b>
+                        <i class="iconfont">&#60191;</i>
+                        <b>4.8</b>
+                        <i class="iconfont">&#60191;</i>
+                        <b>4.9</b>
+                        <i class="iconfont">&#60191;</i>
+                    </p>
+                    <span class="iconfont">&#58995;</span>
+                </div>
+            </div>
+            <div class="tianmao-phone">
+                <p>手机逛</p>
+                <span class="iconfont">&#xe626;</span>
+                <i class="iconfont">&#58995;</i>
+            </div>
+            <div id="search">
+                <input type="text" placeholder="请输入关键字">
+                <span>搜天猫</span>
+            </div>
+            <div class="local"> 搜本店</div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    </div>
+    <div class="line"></div>
+    <div class="hualianlogo">
+        <div class="container">
+            <img src="./img/hualianlogo.jpg" alt="">
+        </div>
+        <div class="service">
+        </div>
+        <div id="come-back">
+        </div>
+    </div>
+    <div class="center-nav">
+        <div class="container">
+            <div class="all-shangpin">
+                <a href="all-things.html">本店所有商品</a>
+                <div class="local-all-shangpin">
+                    <p id="baby-list">
+                        <a href="">所有宝贝</a>
+                    </p>
+                    <p>
+                        <a href="">全店热销榜单</a>
+                    </p>
+                    <p id="new-series">
+                        <a href="">*系列新品New</a>
+                    </p>
+                    <p>
+                        <a href="">*现货专区</a>
+                    </p>
+                    <p>
+                        <a href="">*清仓汉服</a>
+                    </p>
+                    <p>
+                        <a href="">*坦袖襦裙</a>
+                    </p>
+                    <p>
+                        <a href="">*齐胸襦裙</a>
+                    </p>
+                    <p>
+                        <a href="">对襟襦裙</a>
+                    </p>
+                    <p>
+                        <a href="">交领襦裙</a>
+                    </p>
+                    <p>
+                        <a href="">男装汉服</a>
+                    </p>
+                    <p>
+                        <a href="">*沃裙专区</a>
+                    </p>
+                    <p id="trimmings">
+                        <a href="">汉服配饰</a>
+                    </p>
+                    <p id="acket">
+                        <a href="">汉服上衣</a>
+                    </p>
+                    <p id="trousers">
+                        <a href="">汉服下装</a>
+                    </p>
+                    <p>
+                        <a href="">亲子装</a>
+                    </p>
+                    <dl class="baby-list">
+                        <dd>
+                            <a href="">按综合</a>
+                        </dd>
+                        <dd>
+                            <a href="">按销量</a>
+                        </dd>
+                        <dd>
+                            <a href="">按新品</a>
+                        </dd>
+                        <dd>
+                            <a href="">按价格</a>
+                        </dd>
+                    </dl>
+                    <dl class="new-series">
+                        <dd>
+                            <a href="">2020/4月15日/希腊神</a>
+                        </dd>
+                        <dd>
+                            <a href="">2020/3月24日/满庭芳</a>
+                        </dd>
+                        <dd>
+                            <a href="">2020/3月5日/相思如梦</a>
+                        </dd>
+                        <dd>
+                            <a href="">2020/2月7日/极乐之宴</a>
+                        </dd>
+                        <dd>
+                            <a href="">2020/1月6日/庚子年华</a>
+                        </dd>
+                        <dd>
+                            <a href="">12月12日上新/春瑞雅</a>
+                        </dd>
+                        <dd>
+                            <a href="">11月11日上新/邂逅系</a>
+                        </dd>
+                        <dd>
+                            <a href="">10月14/千金粉黛系</a>
+                        </dd>
+                        <dd>
+                            <a href="">10月1日/汉服出行系列</a>
+                        </dd>
+                        <dd>
+                            <a href="">9月24日上新/海晏河清</a>
+                        </dd>
+                        <dd>
+                            <a href="">8月21日上新/11周年店</a>
+                        </dd>
+                        <dd>
+                            <a href="">8月8日/古都文旅系列</a>
+                        </dd>
+                        <dd>
+                            <a href="">7月19日/六年拾影系列</a>
+                        </dd>
+                        <dd>
+                            <a href="">6月18日新品/梦笔生花</a>
+                        </dd>
+                    </dl>
+                    <dl class="trimmings">
+                        <dd>
+                            <a href="">吊带/抹胸</a>
+                        </dd>
+                        <dd>
+                            <a href="">发带/腰带</a>
+                        </dd>
+                        <dd>
+                            <a href="">多色披肩</a>
+                        </dd>
+                        <dd>
+                            <a href="">包包专区</a>
+                        </dd>
+                        <dd>
+                            <a href="">鞋/靴/袜</a>
+                        </dd>
+                        <dd>
+                            <a href="">毛领/头饰</a>
+                        </dd>
+                        <dd>
+                            <a href="">扇子</a>
+                        </dd>
+                        <dd>
+                            <a href="">飘带/云肩/披肩</a>
+                        </dd>
+                        <dd>
+                            <a href="">其他类</a>
+                        </dd>
+                    </dl>
+                    <dl class="acket">
+                        <dd>
+                            <a href="">半臂/比甲/褶子</a>
+                        </dd>
+                        <dd>
+                            <a href="">披风/大袖衫</a>
+                        </dd>
+                        <dd>
+                            <a href="">上袄/中衣</a>
+                        </dd>
+                    </dl>
+                    <dl class="trousers">
+                        <dd>
+                            <a href="">宋裤/垮裤</a>
+                        </dd>
+                        <dd>
+                            <a href="">马面裙</a>
+                        </dd>
+                        <dd>
+                            <a href="">中褶/褶裙</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">*每日新品New</a></li>
+                <li><a href="">全店热销榜单</a></li>
+                <li><a href="">*现货专区</a></li>
+                <li><a href="">品牌荣耀</a></li>
+                <li><a href="">关于汉尚</a></li>
+                <li><a href="">会员制度</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="glass">
+        <div class="exzoom" id="exzoom">
+            <!--大图区域-->
+            <div class="exzoom_img_box">
+                <ul class='exzoom_img_ul'>
+                    <li><img src="./img/frng1.jpg" /></li>
+                    <li><img src="./img/feng2.jpg" /></li>
+                    <li><img src="./img/feng3.jpg" /></li>
+                    <li><img src="./img/feng4.jpg" /></li>
+                    <li><img src="./img/feng5.jpg" /></li>
+                </ul>
+                <!-- <span class="iconfont">&#xe647;</span>拍                                                                                                      -->
+                <a href=""></a>
+            </div>
+            <!--缩略图导航-->
+            <div class="exzoom_nav">
+                <!-- <div class="glass-center"></div> -->
+            </div>
+            <div class="glass-center">
+                <h2>汉尚华莲傍画团扇配饰汉服古风刺绣跳舞拍照道具古典多色中国风</h2>
+                <p>古典多色中国风</p>
+                <div class="youhuijuan">
+                    <p><span>价格</span><i>¥</i><s>89.00</s></p>
+                    <h1><span>促销价</span><i>¥</i><strong>79.00</strong><img src="./img/chunxia.PNG" alt=""></h1>
+                    <h4>淘金币可抵扣淘宝价格3%</h4>
+                    <h5><span>本店活动</span><a href="">满100,元包邮</a></h5>
+                </div>
+                <div class="right-away ">
+                    <span>暂无可领优惠卷</span>
+                    <a href="">立即领取</a>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                <div class="freight">
+                    <p><span>运费</span>广东广州 至 南宁<i class="iconfont" id="jiantou">&#xe501;</i>快递:10.00</p>
+                    <span>店铺预售,付款后15天内发货</span>
+                </div>
+                <div class="month">
+                    <span>月销量</span>
+                    <i>175</i>
+                    <s>|</s>
+                    <span>累计评价</span>
+                    <i>0</i>
+                    <s>|</s>
+                    <span>送天猫积分</span>
+                    <b>39</b>
+                </div>
+                <div id="color">
+                    <span>颜色分类</span>
+                    <ul>
+                        <li><img src="./img/fu39.jpg" alt=""></li>
+                        <li><img src="./img/fu38.jpg" alt=""></li>
+                        <li><img src="./img/fu37.jpg" alt=""></li>
+                        <li><img src="./img/fu40.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="number-shanzi">
+                    <span>数量</span>
+                    <input type="text" value="1">
+                    <h5>
+                        <s class="iconfont" id="iconfont1">&#xe681;</s>
+                        <s class="iconfont" id="iconfont2">&#xe506;</s>
+                    </h5>
+                    <i>件</i>
+                    <a href="">库存91件</a>
+                </div>
+                <div class="join">
+                    <span>立即购买</span>
+                    <i><s class="iconfont">&#58890;</s>加入购物车</i>
+                    <p>
+                        <i>服务承诺</i>
+                        <span>正品保证</span>
+                        <span>极速退款</span>
+                        <span>赠运费险</span>
+                        <span>七天无理由退换</span>
+                        <span>支付方式</span>
+                        <s class="iconfont">&#xe501;</s>
+                    </p>
+                </div>
+            </div>
+            <div class="look-look">
+                <!-- 看了又看 -->
+                <ul>
+                    看了又看
+                    <li> <img src="./img/yvpei.jpg" alt=""></li>
+                    <li> <img src="./img/lian1.jpg" alt=""></li>
+                    <li> <img src="./img/fu100.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="shop">
+    </div>
+    <div class="shop">
+        <div class="container">
+            <div id="buy">
+                <div class="buy-left">
+                    <h2>汉尚华莲旗舰店<i></i></h2>
+                </div>
+                <div class="buy-right">
+                    <ul>
+                        <li class="attr">商品详情</li>
+                        <li>累计评价0</li>
+                        <i></i>
+                        <a href="">手机购买</a>
+                        <s></s>
+                        <b></b>
+                        <img src="./img/tianmao3.png" alt="">
+                    </ul>
+                </div>
+                <div class="buy-last">
+                    <i class="iconfont">&#58890;</i>
+                    <span>加入购物车</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="collect2">
+        <div class="container">
+            <div class="shop-list">
+                <div class="shop-list1">
+                    <span>3</span>
+                    <i>天猫3年店</i>
+                    <p>
+                        <span>描述</span>
+                        <span>服务</span>
+                        <span>物流</span>
+                    </p>
+                    <a href="">
+                        <b>4.9</b>
+                        <i class="iconfont">&#60191;</i>
+                        <b>4.8</b>
+                        <i class="iconfont">&#60191;</i>
+                        <b>4.9</b>
+                        <i class="iconfont">&#60191;</i>
+                    </a>
+                    <h4>
+                        <a href="">进店逛逛</a>
+                        <i>店铺收藏</i>
+                    </h4>
+                </div>
+                <div class="shop-list2">
+                    <div class="local-search">
+                        搜索本店
+                    </div>
+                    <span>关键字</span>
+                    <input type="text" value="袄裙">
+                    <h5><span>价格</span><input type="text"><i>-</i><input type="text"></h5>
+                    <a href="">搜索</a>
+                    <p><span>秋上衣</span><span>齐胸襦裙</span><span>袄裙</span></p>
+                </div>
+                <div class="shop-list3">
+                    <h3>售前小姐姐</h3>
+                    <p>
+                        <span>白鹭</span><i></i>
+                        <span>晴雪</span><i></i>
+                        <span>小乔</span><i></i>
+                    </p>
+                    <p>
+                        <span>朱雀</span><i></i>
+                        <span>微光</span><i></i>
+                        <span>青丝</span><i></i>
+                    </p>
+                    <h3>售前小哥哥</h3>
+                    <p> <span>小华</span><i></i></p>
+                    <p>工作时间:周一到周日</p>
+                    <p>9:00-23:30</p>
+                </div>
+                <div class="shop-list4">
+                    <div class="all-list-class">
+                        <h4>全部分类</h4>
+                    </div>
+                    <h5>
+                        <s></s>
+                        查看所有宝贝
+                    </h5>
+                    <p>
+                        <a href="">按新品</a>
+                        <a href="">按销量</a>
+                        <a href="">按收藏</a>
+                        <a href="">按价格</a>
+                    </p>
+                    <h5>
+                        <s></s>
+                        全店热销榜单
+                    </h5>
+                    <h5>
+                        <s></s>
+                        *系列新品New
+                    </h5>
+                    <p>2020/5月5日/国乐系列</p>
+                    <p>2020/4月15日/希腊神话系列</p>
+                    <p>2020/3月24日/满庭芳系列</p>
+                    <p>2020/3月5日/相思入梦系列</p>
+                    <p>2020/2月7日/极乐之宴系列</p>
+                    <p>2020/1月6日/庚子年华系列</p>
+                    <p>12月12日上新/春瑞雅集系列</p>
+                    <p>11月11日上新/邂逅系列</p>
+                    <p>10月14日/千金粉黛系列</p>
+                    <p>10月1日/汉服出行系列</p>
+                    <p>9月24日上新/造物节系列</p>
+                    <p>9月9日上新/海晏河清系列</p>
+                    <p>8月21日上新/11周年店庆款系列</p>
+                    <p>8月8日/古都文旅系列</p>
+                    <p>7月19日/流年拾影系列</p>
+                    <p>6月18日新品/梦笔生花系列</p>
+                    <p>5月13上新/浮生若梦系列</p>
+                    <h5>
+                        <s></s>
+                        *现货专区
+                    </h5>
+                    <h5>
+                        <s></s>
+                        *清仓汉服
+                    </h5>
+                    <h5>
+                        <s></s>
+                        *坦领襦裙
+                    </h5>
+                    <h5>
+                        <s></s>
+                        *齐胸襦裙
+                    </h5>
+                    <h5>
+                        <s></s>
+                        *对襟襦裙
+                    </h5>
+                    <h5>
+                        <s></s>
+                        *交领襦裙
+                    </h5>
+                    <h5>
+                        <s></s>
+                        男装汉服
+                    </h5>
+                    <h5>
+                        <s></s>
+                        *袄裙专区
+                    </h5>
+                    <h5>
+                        <s></s>
+                        汉服配饰
+                    </h5>
+                    <p>吊带/抹胸</p>
+                    <p>发带/腰带</p>
+                    <p>多色披帛</p>
+                    <p>多色披帛</p>
+                    <p>包包专区</p>
+                    <p>帽子/璞></p>
+                    <p>鞋/靴/袜</p>
+                    <p>毛领/头饰</p>
+                    <p>扇子</p>
+                    <p>猫咪服饰</p>
+                    <p>飘带、云肩、披肩></p>
+                    <p>其他类</p>
+                    <h5>
+                        <s></s>
+                        汉服上衣
+                    </h5>
+                    <p>半臂/比甲/褙子</p>
+                    <p>披风/大袖衫</p>
+                    <p>上袄/中衣</p>
+                    <h5>
+                        <s></s>
+                        <strong>汉服下装</strong>
+                    </h5>
+                    <p>宋裤/垮裤</p>
+                    <p>马面裙</p>
+                    <p>中裙/褶裙</p>
+                    <h5>
+                        <s></s>
+                        群/微淘专享
+                    </h5>
+                    <h5>
+                        <s></s>
+                        亲子款
+                    </h5>
+                </div>
+                <div class="shop-list5">
+                    <div id="baby-list">
+                        <h3>宝贝排行榜</h3>
+                    </div>
+                    <ul>
+                        <li class="buy-num">销售量</li>
+                        <li>收藏数</li>
+                    </ul>
+                    <div class="buy-tab">
+                        <div id="buy-tab">
+                            <ul>
+                                <li>
+                                    <img src="./img/long1.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu139.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu13.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu75.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu17.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu21.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu82.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/shang1.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/long1.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <span>查看更多宝贝</span>
+                            </ul>
+                        </div>
+                        <div id="buy-tab" class="buy-tab2">
+                            <ul>
+                                <li>
+                                    <img src="./img/long1.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已收藏<i>477960</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu139.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥198.00</p>
+                                        <span>已收藏<i>182176</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu13.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥128.00</p>
+                                        <span>已收藏<i>208248</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu75.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu17.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu21.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/fu82.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/shang1.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥888.00</p>
+                                        <span>已售出<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="./img/long1.jpg" alt="">
+                                    <a href="">
+                                        <s>汉尚华莲龙母店庆款</s>
+                                        <p>￥528.00</p>
+                                        <span>已收藏<i>26607</i>件</span>
+                                    </a>
+                                </li>
+                                <span>查看更多宝贝</span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-particulars">
+                <div class="shop-part">
+                    <p><span>品牌名称</span><a href="">汉尚华莲</a></p>
+                    <h6>产品参数</h6>
+                    <ul>
+                        <li>围巾品牌: 汉尚华莲</li>
+                        <li>材质: 聚酯纤维</li>
+                        <li>颜色分类: 姜黄色团扇1只-5月20日发货 果绿色团扇1只...</li>
+                        <li>上市时间: 2020年春季</li>
+                        <li>货号: HPS163</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="./img/feng10.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng11.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng12.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng13.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng14.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng15.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng16.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng17.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng18.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng19.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng20.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng21.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng22.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng23.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng24.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/feng25.jpg" alt="">
+                </div>
+            </div>
+            <!-- 评论 -->
+            <div class="shop-particulars">
+                <div class="shop-part">
+                    <div class="shop-part-top">
+                        <dvi class="shop-part-left">
+                            <p>与描述相符</p>
+                            <span>0</span>
+                            <s></s>
+                            <h6>
+                                <i></i>
+                            </h6>
+                        </dvi>
+                    </div>
+                    <div class="shop-part-bottom">
+                        <input type="radio" name="radiogrounp" id="all">
+                        <span>全部</span>
+                        <input type="radio" name="radiogrounp" id="run">
+                        <span>追评(0)</span>
+                        <input type="radio" name="radiogrounp" id="img">
+                        <span>图片(0)</span>
+                        <input type="checkbox">
+                        <span>有内容</span>
+                        <s>按默认<i class="iconfont">&#xe501;</i></s>
+                    </div>
+                </div>
+                <div class="black-cat1">
+                    <img src="./img/heimao.png" alt="">
+                    <span>喵~该商品还没有人评价呢</span>
+                </div>
+                <div class="black-cat2">
+                    <img src="./img/heimao.png" alt="">
+                    <span>喵~该商品暂无追加评价</span>
+                </div>
+                <div class="black-cat3">
+                    <img src="./img/heimao.png" alt="">
+                    <span>喵~该商品还没有买家晒评</span>
+                </div>
+                <h2>使用报告</h2>
+                <img src="./img/new-pepole.png" alt="">
+                <div class="jingdong-list">
+                    <ul>
+                        <li><img src="./img/551.jpg" alt=""></li>
+                        <li><img src="./img/552.jpg" alt=""></li>
+                        <li><img src="./img/553.jpg" alt=""></li>
+                        <li><img src="./img/554.jpg" alt=""></li>
+                        <li><img src="./img/555.jpg" alt=""></li>
+                        <li><img src="./img/556.png" alt=""></li>
+                        <li><img src="./img/557.jpg" alt=""></li>
+                        <li><img src="./img/558.jpg" alt=""></li>
+                        <li><img src="./img/559.jpg" alt=""></li>
+                        <li><img src="./img/510.jpg" alt=""></li>
+                        <li><img src="./img/511.jpg" alt=""></li>
+                        <li><img src="./img/512.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="safety">
+                    <dl>
+                        <dt>安全提示:</dt>
+                        <dd>
+                            请勿随意接收任何来源不明的文件，请勿随意点击任何来源不明的链接。
+                            涉及资金往来的事项请务必仔细核对资金往来信息。 天猫不会以订单有问题，
+                            让您提供任何银行卡、密码、手机验证码！
+                            遇到可疑情况可在钱盾“诈骗举报”中进行举报,
+                            <p> 推荐安全软件<img src="./img/small.png" alt="">钱盾<img src="./img/small2.png" alt=""></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>内容声明：</dt>
+                        <dd>天猫为第三方交易平台及互联网信息服务提供者，
+                            天猫（含网站、客户端等）所展示的商品/服务的标题、价格、
+                            详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。
+                            天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息
+                            有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；天猫存在海量店铺，如用户发现
+                            店铺内有任何违法/侵权信息，
+                            请立即向天猫举报并提供有效线索。</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-nav-wangpu">
+        <div class="container">
+            <div class="bottom-nav-wangpu-top">
+                <img src="./img/wangpu.png" alt="">
+                <span>店铺设计:
+                    <a href="">战国策设计</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="yqtb">
+        <div class="container">
+            <img src="./img/youqitebang.jpg" alt="">
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="line2"></div>
+        </div>
+    </div>
+    <div class="bottomnav">
+        <div class="container">
+            <div class="contact">
+                <dl>
+                    <dt><a href="">购物指南</a></dt>
+                    <dd><a href="">免费注册</a></dd>
+                    <dd><a href="">开通支付宝</a></dd>
+                    <dd><a href="">支付宝充值 </a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">天猫保障</a></dt>
+                    <dd><a href="">发票保障</a></dd>
+                    <dd><a href="">售后规则</a></dd>
+                    <dd><a href="">缺货赔付</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">支付方式</a></dt>
+                    <dd><a href="">快捷支付</a></dd>
+                    <dd><a href="">信用卡</a></dd>
+                    <dd><a href="">蚂蚁花呗</a></dd>
+                    <dd><a href="">货到付款</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">商家服务</a></dt>
+                    <dd><a href="">天猫规则</a></dd>
+                    <dd><a href="">商家入驻</a></dd>
+                    <dd><a href="">商家中心</a></dd>
+                    <dd><a href="">天猫智库</a></dd>
+                    <dd><a href="">物流服务</a></dd>
+                    <dd><a href="">喵言喵语</a></dd>
+                    <dd><a href="">运营服务</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">手机天猫</a></dt>
+                    <img src="./img/tianmaoerweima.png" alt="">
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="miao">
+        <div class="container">
+            <h2> <img src="./img/miao.jpg" alt=""></h2>
+            <div class="miao-bottom">
+                <p>
+                    <span>关于天猫</span>
+                    <span>帮助中心</span>
+                    <span>开放平台</span>
+                    <span>诚聘英才</span>
+                    <span>联系我们</span>
+                    <span>网站合作</span>
+                    <span>法律声明</span>
+                    <span>隐私权政策</span>
+                    <span>知识产权</span>
+                    <span>廉正举报</span>
+                </p>
+                <p>
+                    <span>阿里巴巴集团</span>
+                    <i>|</i>
+                    <span>淘宝网</span>
+                    <i>|</i>
+                    <span>天猫</span>
+                    <i>|</i>
+                    <span>聚划算</span>
+                    <i>|</i>
+                    <span>全球速卖通</span>
+                    <i>|</i>
+                    <span>阿里巴巴国际交易市场</span>
+                    <i>|</i>
+                    <span>1688</span>
+                    <i>|</i>
+                    <span>阿里妈妈</span>
+                    <i>|</i>
+                    <span>飞猪</span>
+                    <i>|</i>
+                    <span>阿里云计算</span>
+                    <i>|</i>
+                    <span>AliOS</span>
+                    <i>|</i>
+                    <span>阿里通信</span>
+                    <i>|</i>
+                    <span>万网</span>
+                    <i>|</i>
+                    <span>高德</span>
+                    <i>|</i>
+                    <span>UC</span>
+                    <i>|</i>
+                    <span>友盟</span>
+                    <i>|</i>
+                    <span>虾米</span>
+                    <i>|</i>
+                    <span>钉钉</span>
+                    <i>|</i>
+                    <span>支付宝</span>
+                    <i>|</i>
+                    <span>阿里安全</span>
+                    <i>|</i>
+                </p>
+                <p>
+                    <a href="">增值电信业务经营许可证: 浙B2-20110446</a>
+                    <a href="">市场名称登记证：工商网市字3301004119号</a>
+                    <a href="">出版物网络交易平台服务经营备案证： 新出发浙备字第001号</a>
+                </p>
+                <p>
+                    <a href="">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</a>
+                    <a href="">互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005</a>
+                    <img src="./img/jingcha.png" alt="">
+                    <a href="">
+                        浙公网安备 33010002000120号
+                    </a>
+                </p>
+                <p>
+                    <a href="">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</a>
+                    <a href="">互联网药品交易服务资格证书：国A20150001</a>
+                </p>
+                <p>
+                    <a href="">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</a>
+                    <a href="">互联网药品交易服务资格证书：国A20150001</a>
+                </p>
+                <p>
+                    <a href="">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</a>
+                    <a href="">12318举报</a>
+                </p>
+                <p><b>© 2003-2020 TMALL.COM 版权所有</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
