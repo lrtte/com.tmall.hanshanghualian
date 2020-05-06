@@ -40,31 +40,31 @@ $(function () {
   //---------------------------------------------------------------------------->
   // 轮播图
   //声明变量来计算点击次数
-  let index = 0;
-  //给arrow-left添加点击事件
-  $('.arrow-right').on('click', function () {
-    //点击一次  +1
-    index++;
-    //给轮播图做限定
-    if (index > $('.carousel li').length - 1) {
-      index = 0
-    }
-    // console.log('11')
-    $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
-    // console.log( $('.carousel li').length)
-  })
-  //点击做箭头 往右走一张
-  $('.arrow-left').on('click', function () {
-    index--;
-    if (index < 0) {
-      index = $('.carousel li').length - 1;
-    }
-    $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
-  })
-  //自动走
-  setInterval(function () {
-    $('.arrow-right').click();
-  }, 5000)
+  // let index = 0;
+  // //给arrow-left添加点击事件
+  // $('.arrow-right').on('click', function () {
+  //   //点击一次  +1
+  //   index++;
+  //   //给轮播图做限定
+  //   if (index > $('.carousel li').length - 1) {
+  //     index = 0
+  //   }
+  //   // console.log('11')
+  //   $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
+  //   // console.log( $('.carousel li').length)
+  // })
+  // //点击做箭头 往右走一张
+  // $('.arrow-left').on('click', function () {
+  //   index--;
+  //   if (index < 0) {
+  //     index = $('.carousel li').length - 1;
+  //   }
+  //   $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
+  // })
+  // //自动走
+  // setInterval(function () {
+  //   $('.arrow-right').click();
+  // }, 5000)
   //---------------------------------------------------->
   // 鼠标移入到title上面对应的盒子显示出来
 
@@ -417,7 +417,7 @@ $(function () {
     $('.han_chinese_clothing-list60').css('backgroundImage', `url(${imgSrc})`)
   })
 
-  // 放大镜------------------------------>
+  // 放大镜插件------------------------------>
   $("#exzoom").exzoom();
 
   //  商品详情评价tab------------------------------------->
@@ -429,24 +429,45 @@ $(function () {
   $('.shop-list5>ul>li').mouseover(function () {
     $('#buy-tab').hide();
     $(this).addClass('buy-num').siblings('li').removeClass('buy-num')
-    let index = $(this).index();
-    $('#buy-tab').eq(index).show()
-    // $('.buy-tab2').hide()
+
+  })
+  $('.shop-list5>ul>li:nth-child(1)').mouseover(function(){
+  $('#buy-tab1').show()
+  $('#buy-tab2').hide()
   })
 
+  $('.shop-list5>ul>li:nth-child(2)').mouseover(function(){
+    $('#buy-tab2').show()
+    $('#buy-tab1').hide()
+    })
 
   $('.buy-right>ul>li').click(function () {
-    // 1.1 让所有的item隐藏
-    // $('.item').eq(index).show();
     $('.shop-particulars').hide();
-    // $(this).addClass('current').siblings('li').removeClass('current')
-    // $(this).addClass('active').siblings('li').removeClass('active');
-    // 1.2 让点击的这个li的索引对应的那个item显示
     let index = $(this).index();
     // console.log(index);
     $('.shop-particulars').eq(index).show();
   })
+  $('.buy-right>ul>li:nth-child(2)').click(function(){
+    $('.collect').css({
+      'height':3290
+    })
+  })
+  $('.buy-right>ul>li:nth-child(2)').click(function(){
+    $('.collect2').css({
+      'height':3290
+    })
+  })
 
+  $('.buy-right>ul>li:nth-child(1)').click(function(){
+    $('.collect').css({
+      'height':11801
+    })
+  })
+  $('.buy-right>ul>li:nth-child(1)').click(function(){
+    $('.collect2').css({
+      'height':11801
+    })
+  })
   $('.shop-part-bottom>#all').change(function () {
     //  console.log($(this).prop('checked'))
     $(this).prop('checked')
@@ -469,7 +490,7 @@ $(function () {
     $('.black-cat3').show()
   })
   // 视频播放---------------------------------------->
-  
+
   //固定导航  购物车显示 
 
   let boxTop = $('.shop').offset().top;
@@ -485,30 +506,52 @@ $(function () {
         'top': 0
       })
       $('.buy-last').show()
-      $('.buy-right>ul>img').show()
+      // $('.buy-right>ul>img').show()
     } else {
       // 3.否则不固定
       $('.shop').css({
         'position': 'static'
       })
       $('.buy-last').hide()
-      $('.buy-right>ul>img').hide()
+      // $('.buy-right>ul>img').hide()
     }
   })
-   
-  $('.buy-right>ul>b').mouseover(function(){
+
+  $('.buy-right>ul>b').mouseover(function () {
     $('.buy-right>ul>b').hide()
     $('.buy-right>ul>s').show()
     $('.buy-right>ul>img').show()
   })
-  $('.buy-right>ul>s').mouseout(function(){
+  $('.buy-right>ul>s').mouseout(function () {
     $('.buy-right>ul>b').show()
     $('.buy-right>ul>s').hide()
     $('.buy-right>ul>img').hide()
-    
+
+  })
+
+  var op = document.querySelector('.buy-right>ul>b')
+  op.onmouseover = function () {
+    console.log('11')
+  }
+
+  // 功能3:点击左箭头 图片往右走 点击一次 走一张图片 无缝的轮播
+  // 3.1.给左边箭头注册点击事件
+  prev.addEventListener('click', function () {
+    // 3.2.判断一下 num是不是0
+    if (num == 0) {
+      // 3.3.如果是0, 让num为ul数组的最大索引
+      num = ul.children.length - 1;
+      // 3.4.同时让ul的left变成 - num * 窗口宽度
+      ul.style.left = -num * sliderWidth + 'px';
+    }
+    // 3.5.让num递减
+    num--;
+    // 3.6.移动ul
+    animate(ul, {
+      left: -num * sliderWidth
+    })
   })
 })
-
 
 
 
