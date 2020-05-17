@@ -40,31 +40,31 @@ $(function () {
   //---------------------------------------------------------------------------->
   // 轮播图
   //声明变量来计算点击次数
-  // let index = 0;
-  // //给arrow-left添加点击事件
-  // $('.arrow-right').on('click', function () {
-  //   //点击一次  +1
-  //   index++;
-  //   //给轮播图做限定
-  //   if (index > $('.carousel li').length - 1) {
-  //     index = 0
-  //   }
-  //   // console.log('11')
-  //   $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
-  //   // console.log( $('.carousel li').length)
-  // })
-  // //点击做箭头 往右走一张
-  // $('.arrow-left').on('click', function () {
-  //   index--;
-  //   if (index < 0) {
-  //     index = $('.carousel li').length - 1;
-  //   }
-  //   $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
-  // })
-  // //自动走
-  // setInterval(function () {
-  //   $('.arrow-right').click();
-  // }, 5000)
+  let index = 0;
+  //给arrow-left添加点击事件
+  $('.arrow-right').on('click', function () {
+    //点击一次  +1
+    index++;
+    //给轮播图做限定
+    if (index > $('.carousel li').length - 1) {
+      index = 0
+    }
+    // console.log('11')
+    $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
+    // console.log( $('.carousel li').length)
+  })
+  //点击做箭头 往右走一张
+  $('.arrow-left').on('click', function () {
+    index--;
+    if (index < 0) {
+      index = $('.carousel li').length - 1;
+    }
+    $('.carousel li').eq(index).fadeIn(500).siblings('li').fadeOut(500)
+  })
+  //自动走
+  setInterval(function () {
+    $('.arrow-right').click();
+  }, 5000)
   //---------------------------------------------------->
   // 鼠标移入到title上面对应的盒子显示出来
 
@@ -89,7 +89,6 @@ $(function () {
   // })
   // $('#baby-list').hover(function () {
   //     $('.baby-list').toggle()
-
   // })
   // $('#new-series').hover(function () {
   //     $('.new-series').toggle()
@@ -529,26 +528,15 @@ $(function () {
 
   })
 
-  var op = document.querySelector('.buy-right>ul>b')
-  op.onmouseover = function () {
-    console.log('11')
-  }
-
-  // 功能3:点击左箭头 图片往右走 点击一次 走一张图片 无缝的轮播
-  // 3.1.给左边箭头注册点击事件
-  prev.addEventListener('click', function () {
-    // 3.2.判断一下 num是不是0
-    if (num == 0) {
-      // 3.3.如果是0, 让num为ul数组的最大索引
-      num = ul.children.length - 1;
-      // 3.4.同时让ul的left变成 - num * 窗口宽度
-      ul.style.left = -num * sliderWidth + 'px';
-    }
-    // 3.5.让num递减
-    num--;
-    // 3.6.移动ul
-    animate(ul, {
-      left: -num * sliderWidth
+  // 得到焦点失去焦点----------------->
+  $('#key').focus(function(){
+    $(this).css({
+      'color':'#ccc'
+    })
+  })
+  $('#key').blur(function(){
+    $(this).css({
+      'color':'#ccc'
     })
   })
 })

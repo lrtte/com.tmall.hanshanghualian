@@ -9,25 +9,25 @@
     line-height: 30px;
 }
 .nav ul li a{
-
     line-height: 30px;
 }
 .nav ul{
     height: 30px;
     width: 402px;
     float: left;
+    margin-left: 39px;
 }
 .nav ul li{
     list-style: none;
     color: #999999;
     list-style: none;
     float: left;
-    margin-left: 27px;
+    margin-left: 22px;
     line-height: 30px;
 }
-.nav ul li a,.nav ol li a{
+.nav ul li a{
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
 }
 .nav ul li a:hover,.nav ol li a:hover{
     text-decoration:underline;
@@ -35,47 +35,50 @@
 }
 .nav ul li span{
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px;
 }
 .nav ol li span{
     color: #999999;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 33px;
+    margin-left: -4px;
 }
-/* .nav ol li a{
+.nav ol li a{
     color: #999999;
     font-size: 14px;
     line-height: 30px;
-} */
-.nav ol li .iconfont{
-    /* color: #999999; */
-    font-size: 5px;
 }
-.nav ul li .iconfont{
-    /* color: #999999; */
-    font-size: 5px;
+.nav ol li>span{
+    color: #999999;
+    font-size: 22px;
+    float: left;
 }
+
 .nav ol{
     float: right;
     width: 641px;
-
+    margin-right: -88px;
 }
 .nav ol li{
     list-style: none;
     color: #999999;
     list-style: none;
     float: left;
-    /* margin-left: 22px; */
+    margin-left: 6px;
     line-height: 30px;
-    padding-left: 10px;
-    padding-right:10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.nav ol li a{ 
+.nav ol>li>a{ 
   line-height: 30px;
+  font-size:14px ;
+  float: left;
 }
 .nav ol li i{ 
     line-height: 30px;
+    float: left;
+    margin-right: 5px;
   }
 .awm{
     background-color: #fff;
@@ -397,7 +400,7 @@
     width: 74px;
     display: none;
     position: absolute;
-    right: 847px;
+    right: 753px;
     top: 30px;
     background: #fff;
     z-index: 93110;
@@ -407,10 +410,10 @@
     padding: 8px 10px;
 }
 .show2{
-    width: 74px;
+    width: 64px;
     display: none;
     position: absolute;
-    right: 697px;
+    right: 614px;
     top: 30px;
     background: #fff;
     z-index: 93110;
@@ -422,8 +425,8 @@
 .show3{
     position: relative;
     position: absolute;
-    top: 30px;
-    left: 1183px;
+    top: 31px;
+    left: 1249px;
     width: 175px;
     height: 216px;
     background-color: blue;
@@ -438,7 +441,7 @@
   height: 43px;
   background-color: #fff;
   margin-top: 173px;
-  /* color: #515151; */
+  color: #515151;
 }
 .show3 .go-tianmao a{
     color: #515151;
@@ -454,16 +457,20 @@
   }
   .show3 i{
     position: absolute;
-    top: -24px;
-    left: 69px;
-    font-size: 40px;
+    top: -22px;
+    left: 74px;
+    font-size: 22px;
+    color: #fff;    position: absolute;
+    top: -22px;
+    left: 74px;
+    font-size: 22px;
     color: #fff;
 
     }
 .show4{
     width: 122px;
     position: absolute;
-    right: 482px;
+    right: 406px;
     top: 30px;
     background: #fff;
     z-index: 93110;
@@ -487,7 +494,7 @@
 .show5{
     position: absolute;
     top: 30px; 
-    left: 324px;
+    left: 403px;
     width: 1193px;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
@@ -1390,11 +1397,32 @@ font-size: 13px;
     padding: 3px 35px;
     background-position: -128px 0px;
     margin-left: 10px;
+    margin-top:10px;
 }
 .contect>.contect-top h3{
     border-bottom: 1px solid #ccc;
     line-height: 40px;
     height: 45px;
+    padding-left: 11px;
+    padding-top: 4px;
+}
+.contect>.contect-top h2{
+ margin-top: 20px;
+ margin-left: 20px;
+}
+.contect>.contect-top p {
+    /* margin-top: 20px; */
+    margin-left: 20px;
+    height: 30px;
+}
+.contect>.contect-top>p i {
+    width: 20px;
+    height: 20px;
+    background: url(../img/lanjingling.gif);
+    padding: 3px 35px;
+    background-position: -128px 0px;
+    margin-left: 10px;
+    margin-top:10px;
 }
 #come-back{
     position: fixed;
@@ -8262,7 +8290,7 @@ line-height: 25px;
 }
 .nav2 ul li a,.nav ol li a{
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
 }
 .nav2 ul li a:hover,.nav ol li a:hover{
     text-decoration:underline;
@@ -8284,13 +8312,10 @@ line-height: 25px;
     line-height: 30px;
 } */
 .nav2 ol li .iconfont{
-    /* color: #999999; */
-    font-size: 5px;
+    color: #999999;
+    font-size: 22px;
 }
-.nav2 ul li .iconfont{
-    /* color: #999999; */
-    font-size: 5px;
-}
+
 .nav2 ol{
     float: right;
     width: 481px;
